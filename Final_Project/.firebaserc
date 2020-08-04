@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "baco-39277",
+    "default": "baco-39277"
+  }
+}

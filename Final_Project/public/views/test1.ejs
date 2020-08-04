@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>파일</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="jumbotron">
+<h1>파일업로드</h1>
+<p> </p>
+</div>
+<p>.</p>
+<a href="/main">게시판으로 이동</a>
+</div>
+
+
+<br>
+<br>
+<div class="container">
+<form action="/test1" method="get">
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" name="pose" placeholder="pose">
+                                    <button class="btn delicious-btn mt-30" type="submit" >ㄱㄱ</button>
+                                </div>
+                            <table>
+							<tbody>
+                                
+                                <%for(var i=0;i<results.length;i++){ 
+                                    %>
+                                   <%=results[i]%>
+                                   <img src="<%=result[i]%>" alt="img" width="150" height="150">
+								    
+                                         <%}%>  
+                                  
+                           
+							</tbody>
+						</table>
+                                
+ </form>
+</div>
+<br>
+<br>
+<br>
+<h2>파일 다운로드!!</h2>
+<ul>
+    
+</ul>
+</body>
+</html>

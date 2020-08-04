@@ -1,0 +1,418 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>BACO</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/core-img/favicon-32x32.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/classy-nav.min.css">
+    <link rel="stylesheet" href="css/custom-icon.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/theme2.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+  	<!-- Cal -->
+	<style> 
+		table tr td{
+			text-align:center;
+		}
+		.container_cal{
+			float: left;
+		}
+		.cld-main{
+			width: 400px;
+			height: auto;
+		}
+		.input{
+			padding-left: 120px;
+		}
+	</style> 
+	
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="img/core-img/baco_logocut.jpg" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="검색어를 입력하세요">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <!-- Breaking News -->
+                    <div class="col-12 col-sm-6">
+                        <div class="breaking-news">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">FOR YOUR BODY.</a></li>
+                                    <li><a href="#">FOR YOUR MEMBER.</a></li>
+                                    <li><a href="#">JOIN US!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Social Info -->
+                    <div class="col-12 col-sm-6">
+                        <div class="top-social-info text-right">
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="delicious-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.jsp"><img src="img/core-img/baco_mainlogo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="index.jsp">Home</a></li>
+                                    <li class="cn-dropdown-item has-down"><a href="#">회원 관리</a>
+                                        <ul class="dropdown">
+                                            <li><a href="member_list.jsp">회원 명단</a></li>
+                                        </ul>
+                                    <span class="dd-trigger"></span></li>
+                                    <li class="cn-dropdown-item has-down"><a href="#">급여관리</a>
+                                        <ul class="dropdown">
+                                            <li><a href="pay_count.jsp">수업관리</a></li>
+                                            <li><a href="pay_cal.jsp">급여 계산기</a></li>
+                                        </ul>
+                                    <span class="dd-trigger"></span></li>
+                                    <li><a href="contact.jsp">고객센터</a></li>
+                                    <li><a href="login.jsp">로그인</a></li>
+                                </ul>
+
+                                <!-- Newsletter Form -->
+                                <div class="search-btn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+	<!-- ##### Contact Form Area Start ##### -->
+    <div class="contact-area section-padding-0-80">
+        <div class="container" id=calcount>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>급여계산기</h3>
+                    </div>
+                </div>
+        	</div>
+        	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+        	<div class="table100 ver2 m-b-0">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">급여관리</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1">
+									<div class="container_cal">
+	    							<div id="caleandar" class=" NavShow-true DateTimeShow-true DateTimeFormat-mmm, yyyy"></div>
+									</div>
+									</td>
+									<td class="cell100 column1">
+										<div class="limiter" id="member_pb" >
+										<div class="container-table100" style="width: 350px">
+											<div class="wrap-table100">
+        										<div class="table100 ver2 m-b-0">
+													<div class="table100-head">
+														<table>
+															<thead>
+																<tr class="row100 head">
+																	<th>급여계산</th>
+																</tr>
+															</thead>
+														</table>
+													</div>
+													<div class="table100-body js-pscroll">
+														<table>
+															<tbody>
+																<tr>
+																	<td>수업횟수</td>
+																	<td class="input"><input type="number" id="class_number" style="width: 100px"></td> 
+																</tr>
+																<tr>
+																	<td>수업료</td>
+																	<td class="input"><input type="number" id="pay" style="width: 100px"></td> 
+																</tr>
+																<tr>
+																	<td>센터 수수료</td>
+																	<td class="input"><input type="number" id="commission" style="width: 100px"></td>
+																</tr>
+																<tr>
+																	<td>총 급여</td>
+																	<td id="amount">0</td> 
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+              </div>
+         </div>
+    </div>
+										
+        				
+            <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <hr class="divider my-4">
+            <div class="row">
+                <div class="col-12">
+                        <h3>고객센터</h3><br>               
+                </div>
+            </div>
+          <p class="text-muted mb-5">운영시간<br>
+          AM 09:00 ~ PM 18:00<br>
+          점심시간<br>
+          PM 12:00 ~ PM 13:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>
+    <!-- ##### Contact Form Area End ##### -->
+	
+
+    <!-- ##### Follow Us Instagram Area Start ##### -->
+    <div class="follow-us-instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Follow Us Instragram</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Instagram Feeds -->
+        <div class="insta-feeds d-flex flex-wrap">
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_1.png" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_2.png" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_3.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_4.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_5.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_6.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_7.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Follow Us Instagram Area End ##### -->
+<!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                    <div class="footer-social-info text-right">
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                        <a href="index.jsp"><img src="img/core-img/baco_mainlogo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+    <script src="js/google-map/map-active.js"></script>
+    <!-- Calendar -->
+    <script type="text/javascript" src="js/caleandar.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+    <!-- Cal -->
+    <script> 
+	    var class_number=0, pay=0, commission=0, amount=0; 
+		$("#class_number").on("input",function(){ 
+			  class_number = this.value; 
+			  amount = (class_number * pay)*(100-commission)/100; 
+			  $("#amount")[0].innerHTML = amount; 
+		}); 
+		$("#pay").on("input",function(){ 
+			  pay = this.value; 
+			  amount = (class_number * pay)*(100-commission)/100; 
+			  $("#amount")[0].innerHTML = amount; 
+		}); 
+		$("#commission").on("input",function(){ 
+			commission = this.value; 
+			  amount = (class_number * pay)*(100-commission)/100; 
+			  $("#amount")[0].innerHTML = amount; 
+		});
+	</script>
+	  
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Morris -->
+   <link rel="stylesheet" href="css/morris.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="js/morris.min.js"></script>
+     
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>BACO</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/classy-nav.min.css">
+    <link rel="stylesheet" href="css/custom-icon.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <style>
+       #member_pic{
+          width: 200px;
+          height: 250px;
+          paddig-top: 10px;
+          paddig-bottom: 10px;
+       }
+       #member_pb{
+          width: 480px;
+          height: auto;
+       }
+       .member_pblist{
+            margin: 0px 0px 0px 30px;
+            float:left;
+            z-index:1;
+        }
+        .member_pblist ul{
+            list-style-type: none;
+            margin: 0px 0px 0px 0px;
+            padding:3px;
+            float:left;
+            width:200px;
+            background-color:white;
+        }
+        .member_pblist li{
+            display:block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color:black;
+        }
+        .member_pblist li:hover{
+            background-color: white;
+            color: red;
+        }
+        .info_list{
+           width: 100px;
+        }.dd {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+       
+    </style>
+
+</head>
+<body>
+    <!-- Preloader -->
+    
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="Type any keywords...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <!-- Breaking News -->
+                    <div class="col-12 col-sm-6">
+                        <div class="breaking-news">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">FOR YOUR BODY.</a></li>
+                                    <li><a href="#">FOR YOUR MEMBER.</a></li>
+                                    <li><a href="#">JOIN US!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Social Info -->
+                    <div class="col-12 col-sm-6">
+                        <div class="top-social-info text-right">
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="delicious-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="/"><img src="img/core-img/baco_mainlogo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li class="cn-dropdown-item has-down"><a href="#">회원 관리</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/member_list">회원 명단</a></li>
+                                        </ul>
+                                    <span class="dd-trigger"></span></li>
+                                    <li class="cn-dropdown-item has-down"><a href="#">급여관리</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/pay_count">수업관리</a></li>
+                                            <li><a href="/pay_cal">급여 계산기</a></li>
+                                        </ul>
+                                    <span class="dd-trigger"></span></li>
+                                    <li><a href="/contact">고객센터</a></li>
+                                    <li><a href="/logout">로그아웃</a></li>
+                                </ul>
+                                <!-- Newsletter Form -->
+                                <div class="search-btn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+   <!-- ##### Contact Form Area Start ##### -->
+    <div class="contact-area section-padding-0-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>회원별 정보</h3>
+                    </div>
+                </div>
+            </div>
+      </div>
+        <div class="limiter">
+      <div class="container-table100">
+         <div class="wrap-table100">
+           <div class="table100 ver2 m-b-0">
+               <div class="table100-head">
+                  <table>
+                     <thead>
+                        <tr class="row100 head">
+                           <th class="cell100 column1"><%=results[0].u_name%></th>
+                        </tr>
+                     </thead>
+                  </table>
+               </div>
+
+               <div class="table100-body js-pscroll">
+                  <table>
+                     <tbody>
+                        <tr class="row100 body">
+                           <td class="cell100 column1" style="width: 300px">
+                           <img src="<%=results[results.length-1].i_img%>" id="member_pic" class='dd' style="width: 300px">
+                           </td>
+                           <td class="cell100 column1">
+                              <div class="member_info" style="width: 400px">
+                              <table>
+                                 <th>회원 정보</th>
+                                    <tr>
+                                       <td class=info_list>이름</td><td><%=results[0].u_name%></td>
+                                    </tr>
+                                    <tr>
+                                       <td class=info_list>성별</td><td><%=results[0].u_sex%></td>
+                                    </tr>
+                                    <tr>
+                                       <td class=info_list>생년월일</td><td><%=results[0].u_birth%></td>
+                                    </tr>
+                                    <tr>
+                                       <td class=info_list>종류</td><td><%=results[0].ui_kind%></td>
+                                    </tr>
+                                    <tr>
+                                       <td class=info_list>센터명</td><td><%=results[0].ui_gym%></td>
+                                    </tr>
+                              </table>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class="row100 body">
+                           <td>
+                           <div id="inbody_chart" style="width: 600px; height: 250px">
+                           </div>
+                           </td>
+                           <td class="cell100 column1">
+                           <div class="limiter" id="member_pb" >
+                              <div class="container-table100" style="width: 400px">
+                                 <div class="wrap-table100">
+                                      <div class="table100 ver2 m-b-0">
+                                       <div class="table100-head">
+                                          <table>
+                                             <thead>
+                                                <tr class="row100 head">
+                                                   <th class="cell100 column1">회원님의 체형</th>
+                                                </tr>
+                                             </thead>
+                                          </table>
+                                       </div>
+                                       <div class="member_pblist">
+                                          <ul><%for(var i=0;i<sider1.length;i++){ %>
+                                                 <li onClick = " location.href='/change_next?name=<%=results[0].u_name%>&id=<%=sider1[i].s_pe%>' " onMouseOver = " window.status = '/change_next?name=<%=results[0].u_name%>' " onMouseOut = " window.status = '' " ><%=sider1[i].s_pe%></li>
+                                            <%}%>
+                                            
+                                             </ul>
+                                         </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </td>
+                         </tr>
+                          <tr>
+                            <td>
+                              <table style="width: 170px; text-align: center; margin-left: 30px">
+                                 <th>
+                                   <%for(var i=0;i<id.length;i++){ %>
+                                     <%=id[i]%>
+                                     <%}%>
+                                  </th>
+                              </table>
+                                 <div id="change_line" style="width:600px; height: 400px">
+                                 </div>
+                           </td>
+                           <td>
+                           <table style="text-align: center; width: 250px; margin-left: 50px">
+                                    <tbody>
+                                       <th>진행중인 운동</th>
+                                        
+                                                <tr>
+                                                <td class=workout_list><%=results[0].ud_ex%></td>
+                                                </tr>
+                                             
+                                    </tbody>
+                                 </table>
+                            </td>
+                         </tr>
+                        
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+              </div>
+         </div>
+    </div>
+            <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <hr class="divider my-4">
+            <div class="row">
+                <div class="col-12">
+                        <h3>고객센터</h3><br>               
+                </div>
+            </div>
+          <p class="text-muted mb-5">운영시간<br>
+          AM 09:00 ~ PM 18:00<br>
+          점심시간<br>
+          PM 12:00 ~ PM 13:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+        </div>
+    
+    <!-- ##### Contact Form Area End ##### -->
+   
+
+    <!-- ##### Follow Us Instagram Area Start ##### -->
+    <div class="follow-us-instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Follow Us Instragram</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Instagram Feeds -->
+        <div class="insta-feeds d-flex flex-wrap">
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_1.png" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_2.png" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_3.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_4.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_5.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_6.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta_7.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Follow Us Instagram Area End ##### -->
+<!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                    <div class="footer-social-info text-right">
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                        <a href="/"><img src="img/core-img/baco_mainlogo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script><a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+    <script src="js/google-map/map-active.js"></script>
+    <script>
+       
+        new Morris.Bar({
+	element: 'inbody_chart',
+	data: [ <%for(var i=0;i<result.length;i++){ %>
+	{ year: '<%=result[i].ur_date%>', a: '<%=result[i].ur_weight%>', b: '<%=result[i].ur_fat%>', c: '<%=result[i].ur_mus%>' },
+     <%}%>
+],
+	xkey: 'year',
+	ykeys: ['a', 'b','c'],
+	labels: ['몸무게', '체지방','근육량']
+});
+        
+    </script>
+       <!-- Morris-Line -->
+    <script>
+    new Morris.Line({
+       element: 'change_line',
+       data: [ 
+           <%for(var i=0;i<sider.length;i++){ %>
+            { years: '<%=sider[i].s_time%>', a: '<%=sider[i].s_an%>' },   
+           <%}%>
+       ],
+       xkey: 'years',
+       ykeys: ['a'], ymin: 30, ymax: 150,
+             
+       labels: ['각도']
+              
+     });
+    </script>
+</body>
+</html>

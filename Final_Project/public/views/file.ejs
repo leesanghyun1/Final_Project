@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>파일</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="jumbotron">
+<h1>파일업로드</h1>
+<p> </p>
+</div>
+<p>.</p>
+<a href="/main">게시판으로 이동</a>
+</div>
+
+
+<br>
+<br>
+<div class="container">
+<form action="/upload_images" method="post" enctype="multipart/form-data">
+<div class="form-group">
+<label for="exampleFormControlFile1">파일업로드</label>
+<input type="file" class="form-control-file" id="fileupload" name="fileupload">
+</div>
+<input type="submit" value="올리기">
+</form>
+</div>
+<br>
+<br>
+<br>
+<h2>파일 다운로드11!!</h2>
+<ul>
+    <img src="uploads/images/굿모닝.png" alt="img" width="300" height="300">
+    <img src="uploads/images/니업.png" alt="img" width="300" height="300">
+    
+</ul>
+</body>
+</html>
