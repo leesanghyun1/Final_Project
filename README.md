@@ -17,4 +17,4 @@ Node.js / Mysql / Bootstrap / Android Studio
 66개팀 참여 우수상 수상
 
 # 기타
-Back-End 관련 파일들만 올려둔 상태
+Android Studio 와 Database 관련 파일은 추후  예정
