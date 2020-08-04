@@ -9,7 +9,7 @@
 Node.js / Mysql / Bootstrap / Android Studio
 
 **프로젝트 결과** <br/>
-가천대학교 2019 졸업프로젝트 <br/>
+2019학년도 컴퓨터공학과 졸업작품전(6/5) <br/>
 1팀 최우수상<br/>
 5팀 우수상<br/>
 10팀 장려상<br/>
